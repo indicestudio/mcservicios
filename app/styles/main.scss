@@ -1,12 +1,12 @@
 // bower:scss
 // endbower
-@import 'bootstrap.css';
-@import url('https://fonts.googleapis.com/css?family=Jaldi|Oswald');
-@import '_variables.scss';
+@import url("https://fonts.googleapis.com/css?family=Jaldi|Oswald");
+@import "./imports/_bootstrap.scss";
+@import "./imports/_variables.scss";
+@import "./imports/_sprites.scss";
 
 
-
-//header
+//general
 body {
   font-family: 'Oswald', sans-serif;
 
@@ -18,14 +18,23 @@ a {
   }
 }
 header {
-  background-image: url('../images/header.jpg');
+  background: url('../images/header.jpg') center center;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
 nav {
   padding-top: 1em;
 }
+
+section {
+  padding: 4rem 0;
+}
+
+
+//header
+
 
 .header-txt {
   padding-top: 3rem;
@@ -69,12 +78,125 @@ nav {
 .btn-callout {
   background-color: $color-yellow;
   padding: 0.8em 1.4em;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1.3em;
+  border: none;
+  box-shadow: 2px 2px 7px;
   a {
-    color: #fff;
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 45px;
+  font-size: 2em;
+}
+
+
+// servicios
+#services {
+  background: url("/images/servicios.jpg") center center;
+  background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
   }
 }
 
 
-@import '_query.scss'
+.services-inner {
+  text-align: center;
+  border-radius: 8px;
+  padding: 40px 12px;
+  max-height: 160px;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, .8);
+    cursor: pointer;
+    svg {
+      fill: $color-yellow;
+    }
+  }
+  svg {
+    height: 4rem;
+    fill: #fff;
+  }
+  p {
+    color: #fff;
+    font-family: 'Jaldi', sans-serif;
+    text-align: center;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+  }
+}
+
+.services-row {
+  margin-bottom: 5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+// clients
+#clients {
+  background: $color-yellow;
+}
+// logo carousel
+/*Logo carousel*/
+
+
+#clients {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#clients .clients-wrap {
+  display: block;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#clients .clients-wrap ul {
+  display: block;
+  list-style: none;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 100px;
+  overflow: hidden;
+}
+#clients .clients-wrap ul li {
+  display: block;
+  float: left;
+  position: relative;
+  width: 320px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+#clients .clients-wrap ul li img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0 linear left;
+  filter: grayscale(100%);
+  opacity: 0.65;
+}
+#clients .clients-wrap ul li img:hover {
+  filter: grayscale(0);
+  opacity: 1.0;
+}
+
