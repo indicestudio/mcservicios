@@ -1,0 +1,80 @@
+// bower:scss
+// endbower
+@import 'bootstrap.css';
+@import url('https://fonts.googleapis.com/css?family=Jaldi|Oswald');
+@import '_variables.scss';
+
+
+
+//header
+body {
+  font-family: 'Oswald', sans-serif;
+
+}
+
+a {
+  &:active {
+    color: none;
+  }
+}
+header {
+  background-image: url('../images/header.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+nav {
+  padding-top: 1em;
+}
+
+.header-txt {
+  padding-top: 3rem;
+}
+
+.logo-container {
+  .logo {
+    display: inline-block;
+  }
+}
+
+.main-nav {
+  float: right;
+}
+
+.inner-nav {
+  float: left;
+  margin-right: 15px;
+  list-style: none;
+  color: #fff;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-yellow;
+  }
+}
+
+.main-title {
+  font-size: 3em;
+  font-weight: 900;
+  color: #fff;
+}
+
+.main-p {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.btn-callout {
+  background-color: $color-yellow;
+  padding: 0.8em 1.4em;
+  border-radius: 10px;
+  font-size: 1.3em;
+  a {
+    color: #fff;
+  }
+}
+
+
+@import '_query.scss'
