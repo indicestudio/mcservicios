@@ -13,15 +13,40 @@ body {
 }
 
 a {
+  text-decoration: none;
   &:active {
-    color: none;
+    color: $color-yellow;
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+    text-decoration: none;
+  }
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:link {
+    color: inherit;
+    text-decoration: none;
   }
 }
-header {
+#home {
   background: url('../images/header.jpg') center center;
   background-size: cover;
   height: 100vh;
   position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #000;
+
+  }
 }
 
 nav {
@@ -44,6 +69,10 @@ section {
   .logo {
     display: inline-block;
   }
+}
+
+.logo-container-nos {
+  text-align: center;
 }
 
 .main-nav {
@@ -73,16 +102,21 @@ section {
 .main-p {
   font-size: 1em;
   font-weight: 200;
+  color: $color-yellow;
+  font-family: 'Jaldi', sans-serif;
 }
 
 .btn-callout {
   background-color: $color-yellow;
-  padding: 0.8em 1.4em;
   border-radius: 5px;
   font-size: 1.3em;
   border: none;
   box-shadow: 2px 2px 7px;
+  min-width: 7em;
+  min-height: 3em;
   a {
+    width: 100%;
+    height: 100%;
     color: #000;
     text-decoration: none;
   }
@@ -99,7 +133,7 @@ section {
 
 // servicios
 #services {
-  background: url("/images/servicios.jpg") center center;
+  background: url("../images/servicios.jpg") center center;
   background-size: cover;
   position: relative;
   &:before {
@@ -200,3 +234,116 @@ section {
   opacity: 1.0;
 }
 
+// nosotros
+#us {
+  .menu-overlay {
+    background: rgba(0,0,0,.5);
+    padding-bottom: 25px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+  }
+  background: url("../images/background.jpg") center center;
+  background-size: cover;
+  height: 250px;
+  nav .logo a img{
+    //height: 40px;
+    &:active {
+      border: none;
+    }
+  }
+}
+
+.nos-title {
+  font-size: 5em;
+  margin: 0;
+}
+.nos-p {
+  font-family: 'Jaldi', sans-serif;
+  letter-spacing: 1px;
+  margin: 0;
+  text-align: justify;
+}
+#nosotros {
+
+  .empresa {
+    margin-bottom: 5em;
+  }
+
+}
+
+#calidad {
+  background-color: $color-yellow; 
+}
+
+.calidad-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.iso-logo {
+  margin-top: 80px;
+  width: 150px;
+}
+
+//footer
+#footer {
+  background-color: #424242;
+  color: #fff;
+  padding-top: 50px;
+}
+.contact-title {
+  font-weight: 200;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+.contact-info {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 25px;
+  border-radius: 10px;
+  filter: blur(5px);
+  transition: filter 0.2s ease-in-out;
+  &:hover {
+    filter: blur(0px);
+  }
+}
+
+.contact-p  {
+  font-family: 'Jaldi', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  margin-bottom: 70px;
+}
+
+footer {
+  position: relative;
+  text-align: center;
+  svg {
+    margin: 0 auto;
+    width: 170px;
+    position: absolute;
+    left: 50%;
+    circle {
+      fill: white;
+    }
+    path {
+      fill: #424242;
+    }
+
+  }
+}
+
+.gif-timelapse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  img {
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+@import 'imports/_media.scss';

@@ -23,7 +23,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header>
+    <header id="home">
 
       <nav>
         <div class="container">
@@ -37,11 +37,10 @@
             </div>
             <div class="hidden-xs col-sm-8">
               <ul class="main-nav">
-                <li class="inner-nav">inicio</li>
-                <li class="inner-nav">nosotros</li>
-                <li class="inner-nav">servicios</li>
-                <li class="inner-nav">clientes</li>
-                <li class="inner-nav">contacto</li>
+                <li class="inner-nav"><a href="#">inicio</a></li>
+                <li class="inner-nav"><a href="#services">servicios</a></li>
+                <li class="inner-nav"><a href="#clients">clientes</a></li>
+                <li class="inner-nav"><a href="#footer">contacto</a></li>
               </ul>
             </div>
           </div>
@@ -55,12 +54,12 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-xs-12 col-sm-6">
             <div class="header-txt">
-              <h1 class="main-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, id.</h1>
-              <h6 class="main-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum cum delectus quas accusantium quae soluta. Dicta sequi, eveniet maxime ratione!</h6>
+              <h1 class="main-title">Somos líderes en mantenimiento profesional de estaciones de combustible.</h1>
+              <h6 class="main-p">Tenemos metas claras y definidas, con visión de futuro, y con certificación iso 9001:2000, garantizamos el resultado final de nuestra gestión.</h6>
               <button class="btn-callout">
-                <a href="#">Leer más ></a>
+                <a href="nosotros.html">Leer más ></a>
               </button>
             </div>
           </div>
@@ -206,6 +205,32 @@
       </div>
     </section>
 
+    <footer id="footer">
+      <div class="gif-timelapse">
+        <img src="images/timelapse_mc.gif" alt="">
+      </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="contact-info">
+                <h2 class="contact-title">Contacto</h2>
+                <p class="contact-p">Teléfono: 56-42-426560 | Fax: 56-42-426563<br>
+                    Correo: info@mcservicios.cl<br>
+                    Avda. Siempre viva 985 Chillán</p>
+              </div>
+            </div>
+            <!--<div class="col-xs-12 col-sm-6">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128.6 128.6">
+                <clipPath id="clip">
+                  <circle cx="64.3" cy="64.3" r="64.3"/>
+                  <path d="M63.8 18.3c-19.1 0-34.6 15.5-34.6 34.6 0 7.8 2.6 15 6.9 20.7l27.7 36.9L91.5 73.7c4.3-5.8 6.9-13 6.9-20.7C98.4 33.8 82.9 18.3 63.8 18.3zM63.8 76c-12.7 0-23.1-10.3-23.1-23.1 0-12.7 10.3-23.1 23.1-23.1 12.7 0 23.1 10.3 23.1 23.1C86.9 65.7 76.5 76 63.8 76z"/>
+                </clipPath>                
+              </svg>
+            </div>-->
+
+          </div>
+        </div>
+    </footer>
    
   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
