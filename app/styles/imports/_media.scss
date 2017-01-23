@@ -1,4 +1,10 @@
 //
+@media (max-width: 960px) {
+  .nos-p-calidad {
+    padding: 0 10rem;
+  }
+}
+
 
 @media (max-width: 600px) {
   .main-title {
@@ -17,13 +23,31 @@
   }
   footer {
     .contact-info {
-      background-color: transparent;
+      background-color: rgba(0,0,0,.5);
       filter: none;
+      border-radius: 0;
     }
     .gif-timelapse {
       background-size: auto;
     }
+    .logo-footer {
+      background-color: transparent;
+    }
   }
+
+  .nos-p-calidad {
+    padding: 0;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-family: 'Jaldi', sans-serif;
+  }
+
+  .calidad-title {
+  text-align: center;
+  font-size: 4em;
+  margin-bottom: 5rem;
+  padding: 0;
+}
 
   .nos-title {
     font-size: 2em;
@@ -32,3 +56,15 @@
   }
 
 }
+
+@media (max-width: 600px) and (orientation: landscape) {
+  footer {
+    .logo-footer {
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+

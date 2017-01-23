@@ -1,5 +1,5 @@
   // Local IP Address for browserSync
-  const ip = '192.168.1.40';
+  const ip = '192.168.0.14';
 
 // generated on 2017-01-17 using generator-webapp 2.3.2
 const gulp = require('gulp');
