@@ -2,9 +2,9 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="MC Servicios es una empresa líder en construcción y mantenimiento de estaciones de servicio, tenemos los mas altos estándares de calidad iso 9001.">
+    <meta name="description" content="MC Servicios es una empresa líder en construcción y mantenimiento de estaciones de servicio, tenemos los mas altos estándares de calidad iso 9001. Ofrecemos nuestros servicios a lo largo de todo nuestro país.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MC Servicios</title>
+    <title>MC Servicios, construcción y matención de estaciones de servicio.</title>
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MC Servicios" />
     <meta property="og:url" content="https://www.mcservicios.cl/" />
@@ -44,7 +44,7 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header id="home">
+    <header id="home" class="animation-body">
 
       <nav>
         <div class="container">
@@ -57,7 +57,7 @@
               </div>
             </div>
             <div class="hidden-xs col-sm-8">
-              <ul class="main-nav">
+              <ul class="main-nav onLoad">
                 <li class="inner-nav"><a href="#">Inicio</a></li>
                 <li class="inner-nav"><a href="#services">Servicios</a></li>
                 <li class="inner-nav"><a href="#clients">Clientes</a></li>
@@ -97,7 +97,7 @@
           <div class="col-xs-12 col-sm-6">
             <div class="header-txt">
               <h1 class="main-title">Somos líderes en la construcción y mantención de estaciones de combustible.</h1>
-              <h6 class="main-p">Tenemos metas claras y definidas, con visión de futuro, y con certificación iso 9001:2008, garantizamos el resultado final de nuestra gestión.</h6>
+              <h6 class="main-p">Tenemos metas claras y definidas, con visión de futuro, y con certificación iso 9001:2008, garantizamos el resultado final de nuestra gestión. <strong>Servicios a todo Chile.</strong></h6>
               <button class="btn-callout">
                 <a href="nosotros.html">Leer más ></a>
               </button>
@@ -119,9 +119,19 @@
         <div class="row services-row">
 
           <div class="col-xs-12  col-md-3">
-            <div class="services-inner">
+            <div class="services-inner" data-toggle="modal" data-target="#repair">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76.2 95"><path d="M75.4 0.7c-1-1-2.6-1-3.6 0.1 -2.1 2.2-12.6 13.4-14.5 23 -1.4 7.2 1.2 15.2 3.8 23 1.8 5.5 3.5 10.6 3.5 14.8 0 3.6-1.5 5.5-3 5.5 -1.3 0-2.6-1.7-2.6-4.9 0-4 0-15.4-9.2-17V18.4c0-1.4-1-2.4-2.4-2.4H44.1v-2.7c0-1.4-1-2.4-2.4-2.4H16c-1.4 0-2.6 1-2.6 2.4v2.7h-2.7c-1.4 0-2.6 1-2.6 2.4v65.8H2.6C1.2 84.2 0 85.2 0 86.6v5.7C0 93.7 1.2 95 2.6 95h52.7c1.4 0 2.4-1.3 2.4-2.7v-5.7c0-1.4-1-2.4-2.4-2.4H49.8V50.4c1.9 0.7 4.1 3.2 4.1 11.8 0 6.8 4 10 7.7 10 4 0 8-3.6 8-10.6 0-4.9-1.8-10.5-3.7-16.3 -1.3-4-2.7-8.2-3.4-12 4.1-0.9 6.7-2.8 8-5.6 2.5-5.6-1.7-12.3-2.8-14 2.3-3.3 5-6.6 7.6-9.2C76.4 3.3 76.4 1.7 75.4 0.7zM44.1 42.3c0 1.4-1.1 2.5-2.5 2.5H15.9c-1.4 0-2.5-1.1-2.5-2.5v-18.1c0-1.4 1.1-2.5 2.5-2.5h25.7c1.4 0 2.5 1.1 2.5 2.5V42.3zM65.9 25.5c-0.5 1.2-1.9 2.1-3.9 2.6 0-1.2 0.1-2.3 0.3-3.3 0.4-1.9 1.2-4.1 2.5-6.3C65.8 20.6 66.8 23.5 65.9 25.5z" /></svg>
               <p>Reparación & Mantenimiento<br>Surtidores de estaciones de servicios / Puntos industriales</p>
+            </div>
+          </div>
+
+          <div class="modal fade" id="repair" role="dialog" aria-labelledby="someLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1>Some modal</h1>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -276,7 +286,7 @@
 
     </footer>
    
-  
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

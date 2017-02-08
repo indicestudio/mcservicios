@@ -1,16 +1,16 @@
 // bower:scss
 // endbower
 @import url("https://fonts.googleapis.com/css?family=Jaldi|Oswald");
-@import "./imports/_bootstrap.scss";
+@import "./imports/_bootstrap-modal.scss";
 @import "./imports/_variables.scss";
 @import "./imports/_sprites.scss";
-
+@import "./imports/_animations.scss";
 
 //general
 body {
   font-family: 'Oswald', sans-serif;
 
-} 
+}
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
